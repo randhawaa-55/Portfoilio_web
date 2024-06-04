@@ -47,7 +47,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="my-40 max-w-5xl mx-auto p-3">
-      <h2 className="text-5xl font-bold text-emerald-500 text-center mb-10">
+      <h2 className="text-5xl font-bold text-indigo-500 text-center mb-10">
         Contact
       </h2>
       <div className="flex flex-col items-center gap-5 mb-10">
@@ -55,19 +55,19 @@ export default function Contact() {
           rel="noreferrer"
           target="_blank"
           className="text-center hover:underline"
-          href="https://instagram.com/geeks_for_geeks"
+          href="https://instagram.com/"
         >
           Instagram:
-          <span className="font-bold"> @geeks_for_geeks</span>
+          <span className="font-bold"> @3_Developers</span>
         </a>
         <a
           rel="noreferrer"
           target="_blank"
           className="text-center hover:underline"
-          href="https://twitter.com/geeksforgeeks"
+          href="https://twitter.com/"
         >
           Twitter:
-          <span className="font-bold"> @geeksforgeeks</span>
+          <span className="font-bold"> @3_Developers</span>
         </a>
       </div>
       <form onSubmit={handleSubmit} className="contact-form max-w-md mx-auto p-3 border border-gray-300 rounded-lg bg-white">
