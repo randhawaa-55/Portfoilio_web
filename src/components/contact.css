@@ -1,0 +1,50 @@
+.contact{
+    width: 300px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 1em;
+  }
+  
+  label {
+    margin-bottom: .5em;
+    color: #333333;
+    display: block;
+  }
+  
+  input,
+  textarea {
+    border: 1px solid #CCCCCC;
+    font: 1em sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5em;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007BFF;
+  }
+  
+  button {
+    padding: 0.7em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8em;
+  }
