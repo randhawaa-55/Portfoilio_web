@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -31,17 +32,21 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      // Handle form submission
-      console.log('Form submitted successfully', formData);
-      // Clear form data
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      });
+      try {
+        const response = await axios.post('http://localhost:5000/contact', formData);
+        console.log(response.data);
+        // Clear form data
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } catch (error) {
+        console.error('There was an error submitting the form:', error);
+      }
     }
   };
 
